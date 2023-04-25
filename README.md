@@ -13,7 +13,7 @@ EMAIL_PASSWORD = os.environ.get("GOOGLE_PASS")
 
 Aqui se escribe la direccion de correo a la que se quiere mandar la info del clima
 <code>
-email("<AQUI ESCRIBE TU CORREO>", "Clima", f"{  datosMeteorologicos(e,m, d,r_json)  } ")
+email("\<AQUI ESCRIBE TU CORREO\>", "Clima", f"{  datosMeteorologicos(e,m, d,r_json)  } ")
 </code>
 Basicamente lo que hace el programa es bajar el archivo comprimido que entrega la API de conagua la descomprime y carga los valores en la variable "r_json". Despues pasamos por las preguntas para identificar estado y municipio, para finalmente por medio del metodo "datosMeteorologicos" filtramos la info entregada por conagua para obtener los datos del clima.
 
